@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8dff1">
+  <title>The Kingdom of Babyyyy 👑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky-glow"></div>
+  <div id="floating-hearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">✦ Babyyyy's Kingdom</a>
+    <button id="musicToggle" class="music-toggle" type="button" aria-label="Choose background music">♫ Music</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="sparkle sparkle-one">✧</div><div class="sparkle sparkle-two">✦</div>
+      <p class="eyebrow">A SPECIAL PLACE, MADE JUST FOR YOU</p>
+      <h1>Welcome to<br><span>your kingdom, Babyyyy</span></h1>
+      <p class="intro">Once upon a time, there was a princess who made one person's whole world brighter. This little kingdom is all yours. 💗</p>
+
+      <div class="castle-wrap" role="img" aria-label="A magical pink fairytale castle">
+        <div class="moon"></div>
+        <div class="cloud cloud-left"></div><div class="cloud cloud-right"></div>
+        <div class="castle">
+          <div class="tower tower-left"><i></i><b></b></div>
+          <div class="tower tower-right"><i></i><b></b></div>
+          <div class="main-roof"></div>
+          <div class="castle-body">
+            <div class="window window-left">♡</div>
+            <div class="window window-right">♡</div>
+            <div class="door"><span>♡</span></div>
+          </div>
+          <div class="flag">⚑</div>
+        </div>
+        <div class="castle-ground"></div>
+        <span class="castle-star star-a">✦</span><span class="castle-star star-b">✧</span><span class="castle-star star-c">✦</span>
+      </div>
+      <button class="primary-btn" id="enterButton" type="button">Enter your castle <span>♡</span></button>
+      <p class="tiny-note">Psst… your royal surprises are waiting below.</p>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <p class="eyebrow">A MESSAGE FROM YOUR KINGDOM</p>
+      <h2>A little letter<br><span>for my princess</span></h2>
+      <div class="envelope-area">
+        <button class="envelope" id="envelope" type="button" aria-label="Open your secret love letter">
+          <span class="envelope-flap"></span><span class="envelope-heart">♡</span>
+          <span class="envelope-label">Tap to open</span>
+        </button>
+      </div>
+      <article class="letter-card" id="letterCard" hidden>
+        <p class="letter-kicker">To my favourite girl,</p>
+        <p>My Babyyyy,</p>
+        <p>If I could build a kingdom for you, I would fill it with all the little things that make you smile, all the flowers you love, and all the happiness your heart can hold.</p>
+        <p>You don't need a crown to be my princess. You make ordinary days feel magical just by being in them. Thank you for being you, for your smiles, your silliness, and every little moment that becomes a favourite memory.</p>
+        <p>Whenever the world feels too loud, I hope you remember that you have someone cheering for you, choosing you, and wishing you the happiest things.</p>
+        <p class="signoff">Always your biggest fan,<br><strong>Your person ♡</strong></p>
+      </article>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <p class="eyebrow">OUR LITTLE UNIVERSE</p>
+      <h2>Our favourite<br><span>little memories</span></h2>
+      <p class="section-copy">Add your favourite pictures together here. Every photo deserves a tiny place in this kingdom.</p>
+      <label class="upload-btn" for="photoUpload">＋ Add our photos</label>
+      <input id="photoUpload" type="file" accept="image/*" multiple hidden>
+      <div class="photo-grid" id="photoGrid">
+        <div class="photo-placeholder"><span>♡</span><p>Your first favourite memory</p></div>
+        <div class="photo-placeholder"><span>✧</span><p>A day worth remembering</p></div>
+        <div class="photo-placeholder"><span>🌷</span><p>One of a million smiles</p></div>
+      </div>
+      <p class="tiny-note">Photos selected here preview on this device. To publish them for her too, add the image files to the website folder and follow the photo instructions below.</p>
+    </section>
+
+    <section class="section wish-section" id="wish">
+      <div class="wish-card">
+        <div class="crown">♛</div>
+        <p class="eyebrow">A ROYAL WISH</p>
+        <h2>Long live<br><span>my princess!</span></h2>
+        <p>May your days be soft, your dreams be big, your heart be light, and your smile never run out. You deserve a whole sky full of stars, Babyyyy.</p>
+        <button class="primary-btn" id="fireworksButton" type="button">Make a wish ✨</button>
+      </div>
+      <canvas id="fireworks" aria-hidden="true"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with an unreasonable amount of love ♡</p>
+    <p class="footer-small">For Babyyyy, from your favourite human.</p>
+  </footer>
+
+  <div class="music-panel" id="musicPanel" hidden>
+    <div class="music-panel-inner">
+      <button class="close-panel" id="closeMusic" type="button" aria-label="Close">×</button>
+      <h3>Choose your kingdom's music 🎶</h3>
+      <p>Pick an audio file from your phone. Music starts only after you press play.</p>
+      <label class="upload-btn" for="musicUpload">Choose music file</label>
+      <input id="musicUpload" type="file" accept="audio/*" hidden>
+      <audio id="backgroundMusic" controls loop></audio>
+      <p class="tiny-note">Use music you own or have permission to share.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
